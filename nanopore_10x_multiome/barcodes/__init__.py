@@ -25,10 +25,10 @@ class BarcodeHolder:
 
     @classmethod
     def load(cls, pbar=False, test=False):
-        if cls.gex_barcodes is None:
+        if test or cls.gex_barcodes is None:
             cls.gex_barcodes = load_gex_barcodes(test=test)
 
-        if cls.atac_barcodes is None:
+        if test or cls.atac_barcodes is None:
             cls.atac_barcodes = load_atac_barcodes(test=test)
 
         if cls.gex_correction_table is None:

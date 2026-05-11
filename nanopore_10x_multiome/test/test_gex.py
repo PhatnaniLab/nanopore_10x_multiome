@@ -234,7 +234,7 @@ def test_missing_bases_gex_full():
     assert umi[1] == "B" * 12
 
 
-def test_extra_bases_gex_full_rc():
+def test_missing_bases_gex_full_rc_from_start():
 
     seq = create_gex_sequence(
         'ACACTCTTTCCCTACACACGCTCTCCGATTATGCATGCATGCATGCATGCATGCATGCTTTTTTTTTTTTTTTTTTTTTT',
@@ -259,7 +259,7 @@ def test_extra_bases_gex_full_rc():
     assert umi[1] == "B" * 12
 
 
-def test_missing_bases_gex_full():
+def test_missing_bases_gex_full_at_start():
 
     seq = create_gex_sequence(
         'ACACTCTTTCCCTACACACGCTCTCCGATTATGCATGCATGCATGCATGCATGCATGCTTTTTTTTTTTTTTTTTTTTTT',

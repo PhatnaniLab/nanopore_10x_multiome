@@ -1,3 +1,5 @@
+__version__ = '0.2.0'
+
 from .multiome import (
     split_multiome_preamp_fastq
 )

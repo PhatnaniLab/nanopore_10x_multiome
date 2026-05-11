@@ -7,12 +7,13 @@ from nanopore_10x_multiome.barcodes import load_missing_multiome_barcode_info
 from nanopore_10x_multiome.utils import fastqProcessor
 
 TEST_FILE = os.path.join(Path(__file__).parent.absolute(), 'TEST_READS.fastq')
-load_missing_multiome_barcode_info(test=True)
 
 N_ATAC = 7
 N_GEX = 10
 
 def test_multiome_stack():
+
+    load_missing_multiome_barcode_info(test=True)
 
     with tempfile.TemporaryDirectory() as td:
 

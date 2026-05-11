@@ -124,7 +124,7 @@ def correct_barcode(
             'valid_barcodes_char_table, and min_weight_dist'
         )
 
-    weights = (convert_qual_illumina(qual) - 15) / 15
+    weights = (np.asanyarray(convert_qual_illumina(qual)) - 15) / 15
     weights = np.maximum(weights, 0) + 1
 
     # Encode quality scores

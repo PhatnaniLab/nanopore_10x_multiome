@@ -67,7 +67,7 @@ def test_bam_writer():
             verify_ids=False
         )
 
-        with open('TEST_FASTQ.fastq', mode='r') as fastqfile:
+        with open(TEST_FILE, mode='r') as fastqfile:
             with pysam.AlignmentFile(_tempfile, mode='rb', check_sq=False) as outfile:
                 for x, y in zip(
                     processor.fastq_gen(fastqfile),

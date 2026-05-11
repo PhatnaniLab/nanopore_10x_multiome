@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 DISTNAME = 'nanopore_10x_multiome'
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 MAINTAINER = 'Chris Jackson'
 MAINTAINER_EMAIL = 'cjackson@nygenome.org'
 LICENSE = 'MIT'

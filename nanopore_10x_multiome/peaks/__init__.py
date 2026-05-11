@@ -1,0 +1,1 @@
+from .tn5_ends import paired_end_to_single_end_trim
